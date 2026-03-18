@@ -1,0 +1,131 @@
+% resume.tex — Tailored for JPMorgan Chase Technology Support III
+% Compile with: pdflatex resume.tex
+\documentclass[9.5pt, letterpaper]{extarticle}
+
+% ── Packages ──
+\usepackage[margin=0.5in, bottom=0.3in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% ── Colors ──
+\definecolor{headingblue}{HTML}{1F4E79}
+\definecolor{HEADINGBLUE}{HTML}{1F4E79}
+
+% ── Link styling ──
+\hypersetup{colorlinks=true, urlcolor=headingblue, linkcolor=headingblue}
+
+% ── Section formatting ──
+\titleformat{\section}
+  {\bfseries\fontsize{10}{12}\selectfont\color{headingblue}\MakeUppercase}
+  {}
+  {0pt}
+  {}
+  [\vspace{-6pt}{\color{headingblue}\rule{\textwidth}{0.6pt}}\vspace{-6pt}]
+
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+% ── List formatting ──
+\setlist[itemize]{
+  leftmargin=14pt,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=1pt,
+  label=\textbullet
+}
+
+% ── Disable page numbers ──
+\pagestyle{empty}
+
+% ── Helpers ──
+\newcommand{\roleheader}[4]{%
+  \vspace{4pt}
+  \noindent\textbf{#1}\hfill#2\\
+  \textit{#3}\hfill#4
+  \vspace{1pt}
+}
+
+\newcommand{\projectheader}[2]{%
+  \vspace{4pt}
+  \noindent\textbf{#1}\enspace|\enspace#2
+  \vspace{1pt}
+}
+
+\newcommand{\skillline}[2]{%
+  \textbf{#1:} #2
+}
+
+% ══════════════════════════════════════════
+\begin{document}
+
+% ── Name ──
+\begin{center}
+  {\fontsize{14}{16}\selectfont\bfseries FARHAN NOOR}\\[3pt]
+  {\fontsize{9}{11}\selectfont Bowie, MD\enspace|\enspace(240) 354-3599\enspace|\enspace farhan.noor1@outlook.com\enspace|\enspace\href{https://linkedin.com/in/fnoor1}{linkedin.com/in/fnoor1}}
+\end{center}
+\vspace{-4pt}
+{\color{headingblue}\rule{\textwidth}{1.2pt}}
+
+% ── Summary ──
+% Tailored: reframed from "access control" to "production support" language matching JD
+\section{Summary}
+Production support engineer with 2.5+ years ensuring operational stability and availability of enterprise application platforms across Linux environments. Daily work includes incident response, root-cause analysis, service recovery, and production deployments. Proficient in Python and Bash scripting for automation, with hands-on Linux/Unix command-line operations including process and service management, log analysis, and networking diagnostics. AWS Certified Solutions Architect.
+
+% ── Technical Skills ──
+% Tailored: reordered — Systems/Production Support and Scripting lead (top JD requirements)
+\section{Technical Skills}
+\skillline{Systems \& Production Support}{Ubuntu Linux, SSH, Systemd/Service Management, Server Log Analysis, Disk \& Process Management, Production Incident Triage, Windows Server}\\
+\skillline{Scripting \& Automation}{Python, Bash, PowerShell, SQL Scripting}\\
+\skillline{Cloud \& Infrastructure}{AWS (EC2, S3, VPC, CloudFormation), GCP (Vertex AI, Cloud Run, Compute Engine, Cloud Monitoring)}\\
+\skillline{Networking \& Security}{TCP/IP, DNS, SSL/TLS Certificate Management, LDAP/Active Directory, Firewall Configuration (UFW), tcpdump, Netcat}\\
+\skillline{Databases}{PostgreSQL (psql), SQL Server (SSMS, LocalDB), SQL (DML/DDL, Triggers, Bulk Operations)}\\
+\skillline{Tools \& Platforms}{Postman, curl, Chrome DevTools, Salesforce, JIRA, Bugzilla, Git/GitHub}
+
+% ── Professional Experience ──
+\section{Professional Experience}
+
+% Tailored: bullets reordered — incident triage and Linux troubleshooting lead, deployment moved up
+\roleheader{Honeywell (LenelS2)}{Remote}{L2 Software Support Engineer (Promoted)}{July 2025 -- Present}
+\begin{itemize}
+  \item Troubleshoot escalated software, database, and infrastructure issues across enterprise Linux environments, handling 15+ L2 cases per week with only 2 escalations to L3 since promotion.
+  \item SSH into production Ubuntu controllers to diagnose failures --- analyze syslogs, manage 15+ application daemons (Tomcat, CherryPy, custom services), repair broken packages, and resolve upgrade failures.
+  \item Deploy hotfixes to production systems: transfer binaries via SCP, back up originals, set permissions, restart services, and verify the fix.
+  \item Query and modify PostgreSQL production databases to fix access control issues, repair corrupted data, manage triggers, and bulk-migrate user credentials across card formats via SQL.
+  \item Write KB articles documenting troubleshooting procedures and workarounds, used by L1 engineers to resolve recurring issues without escalation.
+\end{itemize}
+
+% Tailored: first bullet reframed from "LenelS2 NetBox access control systems" to "enterprise application platforms"
+\roleheader{Honeywell (LenelS2)}{Remote}{Software Support Engineer}{September 2023 -- July 2025}
+\begin{itemize}
+  \item Provided frontline support for enterprise application platforms, diagnosing software, network, and integration issues for enterprise customers and escalating backend problems with root cause context.
+  \item Walked customers through configuration of SSL certificates, LDAP integrations, credential formats, and controller network connectivity.
+  \item Resolved 150+ cases per month across enterprise environments and earned promotion to L2 within two years.
+\end{itemize}
+
+\roleheader{Cowan Systems}{Baltimore, MD}{IT Support Specialist (Intern)}{August 2022 -- July 2023}
+\begin{itemize}
+  \item Wrote a PowerShell script to find and remove stale user accounts across all databases on a SQL Server instance, replacing a manual cleanup process.
+  \item Imaged and provisioned desktops, laptops, IP phones, mobile devices, and printers; administered user accounts, O365 mailboxes, groups, and permissions in Azure Active Directory.
+  \item Wrote technical documentation for IT procedures and internal support processes.
+\end{itemize}
+
+% ── Selected Projects ──
+\section{Selected Projects}
+
+\projectheader{Cloud Resource Optimizer}{GCP, Python, Vertex AI, Cloud Run}
+\begin{itemize}
+  \item Built a GCP pipeline using Vertex AI to predict workload demand from Cloud Monitoring metrics, then automatically stop/start Compute Engine instances via Cloud Run to cut idle compute costs.
+  \item Trained a forecasting model on historical CPU and memory utilization data to support instance-scheduling decisions.
+\end{itemize}
+
+% ── Education & Certifications ──
+\section{Education \& Certifications}
+\noindent\textbf{Bachelor of Science in Information Systems --- University of Maryland, Baltimore County}\hfill 2023\\
+\textbf{AWS Certified Solutions Architect -- Associate}\hfill 2023
+
+\end{document}

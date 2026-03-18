@@ -1,0 +1,66 @@
+% cover-letter.tex — Tailored for JPMorgan Chase Technology Support III
+% Compile with: pdflatex cover-letter.tex
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% Colors
+\definecolor{linkcolor}{HTML}{0B5394}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{flushleft}
+{\large\bfseries Farhan Noor} \\[2pt]
+Bowie, MD \\
+(240) 354-3599 \enspace|\enspace \href{mailto:farhan.noor1@outlook.com}{farhan.noor1@outlook.com} \\
+\href{https://linkedin.com/in/fnoor1}{linkedin.com/in/fnoor1}
+\end{flushleft}
+
+\vspace{0.5em}
+
+\begin{flushleft}
+\today \\[0.5em]
+Hiring Manager \\
+JPMorgan Chase \\
+New York, NY
+\end{flushleft}
+
+\vspace{0.5em}
+
+% --- SALUTATION ---
+Dear Hiring Manager,
+
+% --- OPENING ---
+I am writing to express my interest in the Technology Support III position within JPMorgan Chase's Commercial and Investment Bank Markets Technology group. With 2.5+ years of production support experience at Honeywell --- troubleshooting escalated software, infrastructure, and database issues across enterprise Linux environments --- I bring a strong foundation in the incident response, root-cause analysis, and operational discipline that this role demands.
+
+% --- BODY 1: Production support at enterprise scale ---
+In my current role as an L2 Software Support Engineer, I handle 15+ escalated cases per week across a global enterprise customer base, maintaining a near-zero escalation rate to L3. My daily work maps directly to the responsibilities outlined in this role: I SSH into production Ubuntu systems to diagnose failures by analyzing syslogs, managing application daemons (Tomcat, CherryPy, and custom services), and deploying hotfixes with proper backup and verification procedures. I query and modify PostgreSQL production databases to resolve data integrity issues and write KB articles that reduce repeat escalations. This hands-on production lifecycle experience --- from incident triage through deployment and continuous improvement --- has prepared me to support the high-availability platforms that power JPMorgan's Credit Trading desk.
+
+% --- BODY 2: Technical depth and structured processes ---
+Beyond production support, I bring proficiency in Python and Bash scripting for building tools and automations, an AWS Solutions Architect -- Associate certification demonstrating cloud infrastructure competency, and experience with structured processes including incident management, change procedures, and cross-functional collaboration with engineering teams. At Honeywell, I earned my promotion to L2 within two years by consistently delivering root-cause context with escalations and resolving 150+ cases per month. I thrive in environments that demand both technical rigor and clear communication with end users --- skills that translate well to front-line support on a trading floor.
+
+% --- CLOSE ---
+I would welcome the opportunity to discuss how my production support experience and technical skills can contribute to the operational stability and reliability of JPMorgan's Markets Technology platforms. I am enthusiastic about the chance to apply my infrastructure troubleshooting background in a new domain and to contribute to SRE initiatives that improve team efficiency. I am available for an interview at your earliest convenience.
+
+Sincerely, \\[1.5em]
+Farhan Noor
+
+\end{document}

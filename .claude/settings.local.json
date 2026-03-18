@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:\\\\Users\\\\nuhan\\\\.claude\\\\projects\\\\f--jobsearch\\\\memory\"\" 2>/dev/null || echo \"Memory directory does not exist \")",
+      "Bash(python3:*)",
+      "Bash(pdflatex -interaction=nonstopmode resume.tex)",
+      "Read(//c/Users/nuhan/AppData/Roaming/Code/User/globalStorage/alefragnani.project-manager/**)"
+    ]
+  }
+}

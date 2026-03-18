@@ -1,0 +1,79 @@
+% cover-letter-established.tex — Professional, measured tone for established companies
+% Compile with: pdflatex cover-letter-established.tex
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% Colors
+\definecolor{linkcolor}{HTML}{0B5394}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{flushleft}
+{\large\bfseries CANDIDATE\_NAME} \\[2pt]
+LOCATION \\
+PHONE \enspace|\enspace \href{mailto:EMAIL}{EMAIL} \\
+\href{https://LINKEDIN}{LINKEDIN}
+% PORTFOLIO\_TRACKING\_LINK
+\end{flushleft}
+
+\vspace{0.5em}
+
+\begin{flushleft}
+\today \\[0.5em]
+HIRING\_MANAGER\_NAME \\
+COMPANY\_NAME \\
+COMPANY\_ADDRESS
+\end{flushleft}
+
+\vspace{0.5em}
+
+% --- SALUTATION ---
+Dear HIRING\_MANAGER\_NAME,
+
+% --- OPENING: Professional, maps to role requirements ---
+% Structured, references specific role and how your background aligns
+OPENING\_PARAGRAPH\_PLACEHOLDER
+% Example tone: "I am writing to express my interest in the [Role] position at [Company].
+% With [X] years of experience in [domain], I bring a proven track record of [key achievement]."
+
+% --- BODY 1: Enterprise experience emphasis ---
+% Global customer base, scale, structured processes
+BODY\_PARAGRAPH\_1\_PLACEHOLDER
+% Emphasize: enterprise-scale operations, global customer support,
+% cross-functional collaboration, measurable outcomes (percentages, metrics)
+
+% --- BODY 2: Process, compliance, certification highlights ---
+% Show you understand and thrive in structured environments
+BODY\_PARAGRAPH\_2\_PLACEHOLDER
+% Emphasize: AWS certification, security compliance, documentation standards,
+% escalation management, process optimization, mentorship
+
+% --- CLOSE: Formal with clear next steps ---
+CLOSING\_PARAGRAPH\_PLACEHOLDER
+% Example tone: "I would welcome the opportunity to discuss how my experience in [domain]
+% can contribute to [Company]'s [specific objective]. I am available for an interview
+% at your earliest convenience."
+
+Sincerely, \\[1.5em]
+CANDIDATE\_NAME
+
+\end{document}

@@ -1,0 +1,78 @@
+% cover-letter-startup.tex — Energetic, direct tone for startups
+% Compile with: pdflatex cover-letter-startup.tex
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% Colors
+\definecolor{linkcolor}{HTML}{0B5394}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{flushleft}
+{\large\bfseries CANDIDATE\_NAME} \\[2pt]
+LOCATION \\
+PHONE \enspace|\enspace \href{mailto:EMAIL}{EMAIL} \\
+\href{https://LINKEDIN}{LINKEDIN}
+% PORTFOLIO\_TRACKING\_LINK
+\end{flushleft}
+
+\vspace{0.5em}
+
+\begin{flushleft}
+\today \\[0.5em]
+HIRING\_MANAGER\_NAME \\
+COMPANY\_NAME \\
+COMPANY\_ADDRESS
+\end{flushleft}
+
+\vspace{0.5em}
+
+% --- SALUTATION ---
+Dear HIRING\_MANAGER\_NAME,
+
+% --- OPENING: Hook about company mission/problem ---
+% Energetic, shows you've done your homework on what they're building
+OPENING\_PARAGRAPH\_PLACEHOLDER
+% Example tone: "I've been following [Company]'s work on [specific problem] —
+% the approach to [specific thing] is exactly the kind of challenge I want to tackle."
+
+% --- BODY 1: Builder mentality + relevant experience ---
+% Show adaptability, wearing multiple hats, lean processes
+BODY\_PARAGRAPH\_1\_PLACEHOLDER
+% Emphasize: side projects, hands-on problem solving, shipping fast,
+% impact metrics, working across the stack
+
+% --- BODY 2: Specific value you'd bring ---
+% Connect your skills directly to their needs
+BODY\_PARAGRAPH\_2\_PLACEHOLDER
+% Emphasize: speed of execution, scrappy resourcefulness,
+% concrete examples of building/automating/improving
+
+% --- CLOSE: Casual but professional ---
+CLOSING\_PARAGRAPH\_PLACEHOLDER
+% Example tone: "I'd love to chat about how I can help [Company] [specific goal].
+% I'm ready to hit the ground running."
+
+Best, \\[1.5em]
+CANDIDATE\_NAME
+
+\end{document}

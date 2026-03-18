@@ -1,0 +1,25 @@
+{
+  "last_updated": "2026-03-15",
+  "opportunities": [
+    {
+      "id": "2026-03-15-jpmorgan-chase-technology-support-iii",
+      "company": "JPMorgan Chase",
+      "role": "Technology Support III",
+      "score": 72,
+      "score_label": "Good Match",
+      "status": "new",
+      "date_added": "2026-03-15",
+      "folder": "opportunities/2026-03-15-jpmorgan-chase-technology-support-iii"
+    },
+    {
+      "id": "2026-03-15-apl-systems-integration-engineer",
+      "company": "APL (Johns Hopkins Applied Physics Laboratory)",
+      "role": "Systems Integration Engineer",
+      "score": 66,
+      "score_label": "Good Match",
+      "status": "new",
+      "date_added": "2026-03-15",
+      "folder": "opportunities/2026-03-15-apl-systems-integration-engineer"
+    }
+  ]
+}

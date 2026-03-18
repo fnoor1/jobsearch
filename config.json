@@ -1,0 +1,13 @@
+{
+  "name": "Farhan Noor",
+  "email": "farhan.noor1@outlook.com",
+  "phone": "(240) 354-3599",
+  "location": "Bowie, MD",
+  "linkedin": "linkedin.com/in/fnoor1",
+  "portfolio_url": "",
+  "target_roles": ["Cloud/DevOps/SRE", "Senior Support Engineering"],
+  "default_scoring_weights": {
+    "required_skills": 2,
+    "preferred_skills": 1
+  }
+}
